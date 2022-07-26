@@ -1,6 +1,6 @@
 const jsonServer = require('json-server');
 const server = jsonServer.create();
-const router = jsonServer.router(require('./faker/index')());
+const router = jsonServer.router(require('./dynamic_db/index')());
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 7000;
 
