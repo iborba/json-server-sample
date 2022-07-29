@@ -1,12 +1,41 @@
 const Chance = require('chance')
 
-module.exports = function analysis() {
+module.exports = function products() {
   const chance = new Chance()
-  const data = { analysis: [] }
+  const data = { products: [] }
+  const categories = []
+  const tags = []
+  
+  for (let i = 1; i <= 5; i++) {
+    categories.push({
+      categoryId: i,
+      categoryDs: chance.sentence(),
+    })
+  }
+  for (let i = 1; i <= 10; i++) {
+    tags.push({
+      tagId: i,
+      tagDs: chance.sentence(),
+    })
+  }
 
-  for (let i = 0; i < 10; i++) {
-    data.analysis.push({
-
+  for (let i = 1; i <= 10; i++) {
+    data.products.push({
+      productId: i,
+      level: chance.word(),
+      productDs: chance.sentence(),
+      categories,  
+      tags,
+      profitabilityPeriod: `${chance.integer({ min: 0, max: 360 })}M`,
+      profitability: `${chance.floating({ min: 0, max: 100, fixed: 2 })}%`,
+      minInvestment: chance.floating({ min: 0, max: 100, fixed: 2 }),
+      cashRedemption: `D+${chance.integer({ min: 0, max: 360 })}`,
+      beginDt: chance.timestamp(), //TODO refactor
+      endDt: chance.timestamp(), //TODO refactor
+      createdAt: chance.timestamp(), //TODO refactor
+      updatedAt: chance.timestamp(), //TODO refactor
+      createdBy: chance.first(),
+      status: chance.bool()
     })
   }
 

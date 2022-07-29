@@ -4,7 +4,7 @@ module.exports = function news() {
   const chance = new Chance()
   const data = { news: [] }
 
-  for (let i = 0; i < 150; i++) {
+  for (let i = 1; i <= 150; i++) {
     data.news.push({
       newsId: i,
       newsTitle: chance.sentence(),

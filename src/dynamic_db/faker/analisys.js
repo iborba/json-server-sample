@@ -4,7 +4,7 @@ module.exports = function analisys() {
   const chance = new Chance()
   const data = { analisys: [] }
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     data.analisys.push({
       analisys: i,
       analisysTitle: chance.sentence(),

@@ -4,7 +4,7 @@ module.exports = function courses() {
   const chance = new Chance()
   const data = { courses: [] }
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     data.courses.push({
       courseId: i,
       courseName:chance.sentence(),
