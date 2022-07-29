@@ -5,6 +5,8 @@ https://chancejs.com/usage/node.html
 
 
 To run the project you can:
+1. npm install
+
 npm run start
 npm run start2
 
