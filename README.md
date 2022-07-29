@@ -1,7 +1,10 @@
 External libs: 
 
 https://github.com/typicode/json-server
+The core of this application, expose a server and create the routes.
+
 https://chancejs.com/usage/node.html
+Chance is a library to mock data, not the best, but works
 
 To run the project you can:
 1. npm install
