@@ -1,0 +1,32 @@
+[
+  {
+    "courseId": "1",
+    "courseName": "Instrumentos financeiros de Renda Fixa",
+    "categories": [
+      {
+        "categoryId": 1,
+        "categoryDs": "Generic"
+      }
+    ],
+    "courseDs": "Tudo sobre a dinâmica das taxas de juros, bem como o processo...",
+    "createdAt": "2022-07-28 15:43:00",
+    "updatedAt": "2022-07-28 15:43:00",
+    "createdBy": "username",
+    "status": true
+  },
+  {
+    "courseId": "2",
+    "courseName": "Como gerar resultados consistentes?",
+    "categories": [
+      {
+        "categoryId": 1,
+        "categoryDs": "Generic"
+      }
+    ],
+    "courseDs": "Tudo sobre a dinâmica das taxas de juros, bem como o processo...",
+    "createdAt": "2022-07-28 15:43:00",
+    "updatedAt": "2022-07-28 15:43:00",
+    "createdBy": "username",
+    "status": true
+  }
+]

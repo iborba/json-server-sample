@@ -1,0 +1,39 @@
+[
+  {
+    "productId": "1",
+    "level": "Moderado",
+    "productDs": "ABSOLUTE VERTEX FIC FIM ACCESS",
+    "categories": [
+      {
+        "categoryId": 1,
+        "categoryDs": "Fundos de Investimento - Multimercado"
+      },
+      {
+        "categoryId": 2,
+        "categoryDs": "Retorno absoluto"
+      }
+    ],  
+
+    "tags": [
+      {
+        "tagId": 1,
+        "tagDs": "Investidor qualificado"
+      },
+      {
+        "tagId": 2,
+        "tagDs": "Isento IFT"
+      }
+    ],
+    
+    "profitabilityPeriod": "12M",
+    "profitability": "2.43%",
+    "minInvestment": 10000.50,
+    "cashRedemption": "D+30",    
+    "beginDt": "2022-07-28 15:00:00",
+    "endDt": "2023-01-31 00:00:00",
+    "createdAt": "2022-07-28 15:43:00",
+    "updatedAt": "2022-07-28 15:43:00",
+    "createdBy": "username",
+    "status": true
+  }
+]

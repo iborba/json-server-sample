@@ -1,0 +1,17 @@
+[
+  {
+    "newsId": "1",
+    "newsTitle": "IBOVESPA cai mais 3% com ameaça de nova variante de COVID",
+    "categories": [
+      {
+        "categoryId": 1,
+        "categoryDs": "Generic"
+      }
+    ],
+    "newsDs": "LOREM IPSUM",
+    "createdAt": "2022-07-28 15:43:00",
+    "updatedAt": "2022-07-28 15:43:00",
+    "createdBy": "username",
+    "status": true
+  }
+]
