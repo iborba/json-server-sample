@@ -6,7 +6,7 @@ module.exports = function campaigns() {
 
   for (let i = 0; i < 10; i++) {
     data.campaigns.push({
-      campaignId: chance.integer({ min: 1, max: 99999 }),
+      campaignId: i,
       campaignDs: chance.word(),
       beginDt: chance.timestamp(), //TODO refactor
       endDt: chance.timestamp(), //TODO refactor

@@ -6,7 +6,7 @@ module.exports = function courses() {
 
   for (let i = 0; i < 10; i++) {
     data.courses.push({
-      courseId: chance.integer({ min: 1, max: 99999 }),
+      courseId: i,
       courseName:chance.sentence(),
       categories: [
        {

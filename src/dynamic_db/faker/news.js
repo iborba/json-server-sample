@@ -6,7 +6,7 @@ module.exports = function news() {
 
   for (let i = 0; i < 150; i++) {
     data.news.push({
-      newsId: chance.integer({ min: 1, max: 99999 }),
+      newsId: i,
       newsTitle: chance.sentence(),
       categories: [
        {
