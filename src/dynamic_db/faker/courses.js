@@ -2,10 +2,11 @@ const Chance = require('chance')
 
 module.exports = function courses() {
   const chance = new Chance()
-  const data = { courses: [] }
+  const courses = []
 
   for (let i = 1; i <= 10; i++) {
-    data.courses.push({
+    courses.push({
+      id: i, //NOTE: This property is used only to enable filtering in json-server and is not from the business.
       courseId: i,
       courseName:chance.sentence(),
       categories: [
@@ -22,5 +23,5 @@ module.exports = function courses() {
     })
   }
 
-  return data;
+  return courses;
 }

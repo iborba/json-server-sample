@@ -2,7 +2,7 @@ const Chance = require('chance')
 
 module.exports = function products() {
   const chance = new Chance()
-  const data = { products: [] }
+  const products = []
   const categories = []
   const tags = []
   
@@ -20,7 +20,8 @@ module.exports = function products() {
   }
 
   for (let i = 1; i <= 10; i++) {
-    data.products.push({
+    products.push({
+      id: i, //NOTE: This property is used only to enable filtering in json-server and is not from the business.
       productId: i,
       level: chance.word(),
       productDs: chance.sentence(),
@@ -39,5 +40,5 @@ module.exports = function products() {
     })
   }
 
-  return data;
+  return products;
 }

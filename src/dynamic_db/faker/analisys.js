@@ -1,11 +1,12 @@
 const Chance = require('chance')
 
-module.exports = function analisys() {
+module.exports = () => {
   const chance = new Chance()
-  const data = { analisys: [] }
+  const analisys = []
 
   for (let i = 1; i <= 10; i++) {
-    data.analisys.push({
+    analisys.push({
+      id: i, //NOTE: This property is used only to enable filtering in json-server and is not from the business.
       analisysId: i,
       analisysTitle: chance.sentence(),
       author: chance.name(),
@@ -18,5 +19,5 @@ module.exports = function analisys() {
     })
   }
 
-  return data;
+  return analisys;
 }

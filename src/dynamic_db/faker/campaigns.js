@@ -2,10 +2,11 @@ const Chance = require('chance')
 
 module.exports = function campaigns() {
   const chance = new Chance()
-  const data = { campaigns: [] }
+  const campaigns = []
 
   for (let i = 1; i <= 10; i++) {
-    data.campaigns.push({
+    campaigns.push({
+      id: i, //NOTE: This property is used only to enable filtering in json-server and is not from the business.
       campaignId: i,
       campaignDs: chance.word(),
       beginDt: chance.timestamp(), //TODO refactor
@@ -17,5 +18,5 @@ module.exports = function campaigns() {
     })
   }
 
-  return data;
+  return campaigns;
 }

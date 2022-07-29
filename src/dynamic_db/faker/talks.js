@@ -13,6 +13,7 @@ module.exports = function talks() {
 
   for (let i = 1; i <= 10; i++) {
     talks.push({
+      id: i, //NOTE: This property is used only to enable filtering in json-server and is not from the business.
       talkId: i,
       talkName: chance.sentence(),
       categories,  
