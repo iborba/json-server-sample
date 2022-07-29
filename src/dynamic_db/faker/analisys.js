@@ -6,7 +6,7 @@ module.exports = function analisys() {
 
   for (let i = 0; i < 10; i++) {
     data.analisys.push({
-      analisys: chance.integer(), //TODO refactor
+      analisys: chance.integer({ min: 1, max: 99999 }),
       analisysTitle: chance.sentence(),
       author: chance.name(),
       analisysDate: chance.timestamp(), //TODO refactor
