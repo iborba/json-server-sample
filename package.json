@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "json-server src/dynamic_db/index.js --port=7000 --id"
+    "start": "json-server src/dynamic_db/index.js --port=7000 --id",
+    "docker": "rm -rf package-lock.json && docker build -t beta-json-server ."
   },
   "keywords": [],
   "author": "",

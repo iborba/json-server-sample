@@ -18,3 +18,22 @@ The script start contains the following options
 * --id means that API will accept this as parameter (that's why a fake id was inserted to all faker objects in this commit: c22df3a9ecda4b86d7b1d2a65ab228d61e1fcc74)
 
 The folder sampleData contains some collection our team has collected and based on these collections the faker were built. sampleData folder is useless in the application.
+
+
+# Docker
+
+You can also run this project via docker, as follows:
+
+```$ npm run docker```
+
+| The command above will build the image
+
+```$ docker-compose up```
+
+| The command above will run the image and show the routes available creating an attached process (your terminal is the host of container lifecycle)
+* Recommended for localhost initial tests
+
+```$ docker-compose up -d```
+
+| The command above will run the image but in detached mode (see more: https://docs.docker.com/language/nodejs/run-containers/#run-in-detached-mode)
+* Recommended for production
