@@ -35,7 +35,8 @@ module.exports = function products() {
       createdAt: chance.timestamp(), //TODO refactor
       updatedAt: chance.timestamp(), //TODO refactor
       createdBy: chance.first(),
-      status: chance.bool()
+      status: chance.bool(),
+      imgUrl: chance.url()
     })
   }
 
