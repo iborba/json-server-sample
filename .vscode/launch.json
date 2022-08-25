@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "pwa-node",
+          "request": "launch",
+          "name": "Launch Program",
+          "skipFiles": [
+              "<node_internals>/**"
+          ],
+          "program": "${workspaceFolder}/app.js"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Mocha Functional tests",
+        "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+        "args": [
+            "--timeout",
+            "10000",
+            "${workspaceRoot}/test/functional/**/*.js"
+        ],
+        "cwd": "${workspaceRoot}",
+        "internalConsoleOptions": "openOnSessionStart"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Mocha Unit tests",
+        "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+        "args": [
+            "${workspaceRoot}/test/unit/**/*.js"
+        ],
+        "cwd": "${workspaceRoot}",
+        "internalConsoleOptions": "openOnSessionStart"
+      }
+  ]
+}
